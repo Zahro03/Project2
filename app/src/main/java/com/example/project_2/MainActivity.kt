@@ -52,6 +52,12 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Bold,
                 color = androidx.compose.ui.graphics.Color.Blue,
             ),
+
+            )
+        Text(
+            text = "0",
+            fontWeight = FontWeight.Bold,
+            fontSize = 25.sp
         )
         }
 }
