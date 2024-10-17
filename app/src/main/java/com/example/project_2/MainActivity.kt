@@ -78,6 +78,10 @@ fun BasicCompose(modifier: Modifier = Modifier){
             fontSize = 20.sp
         )
 
+        Image(
+            painter = painterResource(id = R.drawable.gambar),
+            contentDescription = null)
+
         }
 }
 
