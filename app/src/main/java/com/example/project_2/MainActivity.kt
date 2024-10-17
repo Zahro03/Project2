@@ -1,5 +1,6 @@
 package com.example.project_2
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Layout.Alignment
 import androidx.activity.ComponentActivity
@@ -13,8 +14,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.example.project_2.ui.theme.Project_2Theme
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +45,14 @@ fun BasicCompose(modifier: Modifier = Modifier){
     Column (horizontalAlignment =  androidx.compose.ui.Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxSize()
     ){
+        Text(
+            text = "Indonesia",
+            style = TextStyle(
+                fontSize = 50.sp,
+                fontWeight = FontWeight.Bold,
+                color = androidx.compose.ui.graphics.Color.Blue,
+            ),
+        )
         }
 }
 
