@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 import com.example.project_2.ui.theme.Project_2Theme
 import org.w3c.dom.Text
 
-class MainActivity  : ComponentActivity(){
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
