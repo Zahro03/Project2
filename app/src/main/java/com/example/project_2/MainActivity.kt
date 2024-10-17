@@ -1,9 +1,12 @@
 package com.example.project_2
 
 import android.os.Bundle
+import android.text.Layout.Alignment
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -28,6 +31,16 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BasicCompose(modifier: Modifier = Modifier){
+
+    Column (horizontalAlignment =  androidx.compose.ui.Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxSize()
+    ){
+        }
 }
 
 @Composable
