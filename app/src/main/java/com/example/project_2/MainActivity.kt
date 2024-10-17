@@ -26,7 +26,6 @@ import org.w3c.dom.Text
 class MainActivity  : ComponentActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         enableEdgeToEdge()
         setContent {
             Project_2Theme {
