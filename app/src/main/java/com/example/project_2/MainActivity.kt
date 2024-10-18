@@ -1,8 +1,6 @@
 package com.example.project_2
 
-import android.graphics.Color
 import android.os.Bundle
-import android.text.Layout.Alignment
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -21,7 +19,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.project_2.ui.theme.Project_2Theme
-import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,10 +27,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Project_2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    BasicCompose(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -49,12 +43,13 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Text(
             text = "Indonesia",
             style = TextStyle(
-                fontSize = 50.sp,
+                fontSize =  50.sp,
                 fontWeight = FontWeight.Bold,
                 color = androidx.compose.ui.graphics.Color.Blue,
             ),
 
             )
+
         Text(
             text = "0",
             fontWeight = FontWeight.Bold,
@@ -62,27 +57,35 @@ fun BasicCompose(modifier: Modifier = Modifier){
         )
 
         Image(
-            painter = painterResource(id = R.drawable.logofifa),
+            painter = painterResource(id = R.drawable.logofifaa),
             contentDescription = null)
 
         Text(
-            text = "NAMA : ",
+            text = "NAMA :  ",
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp
         )
 
         Text(
-            text = "20220140066",
+            text = "Zahrotul Jannah ",
+            fontWeight = FontWeight.Bold,
+            fontSize = 20.sp
+        )
+
+        Text(
+            text = "20220140066 ",
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp
         )
 
         Image(
-            painter = painterResource(id = R.drawable.gambar),
+            painter = painterResource(id = R.drawable.gambarr),
             contentDescription = null)
 
-        }
+
+    }
 }
+
 @Composable
 fun Greeting(name: String,modifier: Modifier = Modifier){
     Text(
